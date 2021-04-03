@@ -1,8 +1,7 @@
-import react from 'react';
+import react from "react";
 import './card-list.styles.css' ;
-
-
-export const cardlist= props => 
+export const Cardlist= props => 
 {
-    return <div className="card-list">{props.children}</div>;
+    console.log(props);
+    return <div className="Cardlist">{props.children}</div>;
 };
