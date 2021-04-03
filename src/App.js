@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+import react, { Component } from 'react';
 import './App.css';
-import { Component } from 'react';
+import { cardlist } from './component/card-list/card-list';
 
 class App extends Component
 {
@@ -22,17 +22,17 @@ class App extends Component
   render()
   {
     return (
-      <div className="App">
-        <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {
+      <div className='App'>
+      <cardlist name='Ashish'>
+      <h1>Ashish</h1>
+      {
           this.state.monster.map(
             monster =>
-            <h1 key={monster.id}>
+            (<h1 key={monster.id}>
                { monster.name } 
-            </h1>)
-        }
-        </header>
+            </h1>))
+      }
+      </cardlist>
       </div>
     );
   }
