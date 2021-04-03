@@ -1,5 +1,5 @@
 import react from 'react';
-import './card-list.css';
+import './card-list.styles.css' ;
 
 
 export const cardlist= props => 
