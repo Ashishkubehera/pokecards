@@ -1,4 +1,3 @@
-import react from "react";
 import './card-list.styles.css' ;
 export const Cardlist= props => 
 {
